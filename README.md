@@ -107,6 +107,6 @@ Berikut link dokumentasi API menggunakan Postman
 
 Lihat demo penggunaan API di video berikut:
 
-📺 **Link Video**: []()
+📺 **Link Video**: [https://youtu.be/6H_WhsTYMvU](https://youtu.be/6H_WhsTYMvU)
 
 ---
