@@ -1,0 +1,352 @@
+{
+	"info": {
+		"_postman_id": "d1ae0563-7406-464b-b889-90be77b92064",
+		"name": "Blog-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39526077"
+	},
+	"item": [
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Create ",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2Jsb2ctYXBpL3B1YmxpYy9hcGkvbG9naW4iLCJpYXQiOjE3NDg1OTQ1MzgsImV4cCI6MTc0ODU5ODEzOCwibmJmIjoxNzQ4NTk0NTM4LCJqdGkiOiJwWEVUMFNjTzFQMWRoOXBRIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.0oPNlfP9hUVtRFum7YAx0ITixybq5hh6YkFln77NaO0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Category Name",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/blog-api/public/api/categories",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blog-api",
+								"public",
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2Jsb2ctYXBpL3B1YmxpYy9hcGkvbG9naW4iLCJpYXQiOjE3NDg1OTQ1MzgsImV4cCI6MTc0ODU5ODEzOCwibmJmIjoxNzQ4NTk0NTM4LCJqdGkiOiJwWEVUMFNjTzFQMWRoOXBRIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.0oPNlfP9hUVtRFum7YAx0ITixybq5hh6YkFln77NaO0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/blog-api/public/api/categories",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blog-api",
+								"public",
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Article",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2Jsb2ctYXBpL3B1YmxpYy9hcGkvbG9naW4iLCJpYXQiOjE3NDg1OTQ1MzgsImV4cCI6MTc0ODU5ODEzOCwibmJmIjoxNzQ4NTk0NTM4LCJqdGkiOiJwWEVUMFNjTzFQMWRoOXBRIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.0oPNlfP9hUVtRFum7YAx0ITixybq5hh6YkFln77NaO0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Article Title",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "Content of the article",
+									"type": "text"
+								},
+								{
+									"key": "author",
+									"value": "Author Name",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/blog-api/public/api/articles",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blog-api",
+								"public",
+								"api",
+								"articles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2Jsb2ctYXBpL3B1YmxpYy9hcGkvbG9naW4iLCJpYXQiOjE3NDg1OTQ1MzgsImV4cCI6MTc0ODU5ODEzOCwibmJmIjoxNzQ4NTk0NTM4LCJqdGkiOiJwWEVUMFNjTzFQMWRoOXBRIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.0oPNlfP9hUVtRFum7YAx0ITixybq5hh6YkFln77NaO0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/blog-api/public/api/articles",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blog-api",
+								"public",
+								"api",
+								"articles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List by ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2Jsb2ctYXBpL3B1YmxpYy9hcGkvbG9naW4iLCJpYXQiOjE3NDg1OTQ1MzgsImV4cCI6MTc0ODU5ODEzOCwibmJmIjoxNzQ4NTk0NTM4LCJqdGkiOiJwWEVUMFNjTzFQMWRoOXBRIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.0oPNlfP9hUVtRFum7YAx0ITixybq5hh6YkFln77NaO0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/blog-api/public/api/articles/1",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blog-api",
+								"public",
+								"api",
+								"articles",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2Jsb2ctYXBpL3B1YmxpYy9hcGkvbG9naW4iLCJpYXQiOjE3NDg1OTQ1MzgsImV4cCI6MTc0ODU5ODEzOCwibmJmIjoxNzQ4NTk0NTM4LCJqdGkiOiJwWEVUMFNjTzFQMWRoOXBRIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.0oPNlfP9hUVtRFum7YAx0ITixybq5hh6YkFln77NaO0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Update Title\",\r\n  \"content\": \"Update Content\",\r\n  \"author\": \"Author Name\",\r\n  \"category_id\": 1\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/blog-api/public/api/articles/1",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blog-api",
+								"public",
+								"api",
+								"articles",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2Jsb2ctYXBpL3B1YmxpYy9hcGkvbG9naW4iLCJpYXQiOjE3NDg1OTQ1MzgsImV4cCI6MTc0ODU5ODEzOCwibmJmIjoxNzQ4NTk0NTM4LCJqdGkiOiJwWEVUMFNjTzFQMWRoOXBRIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.0oPNlfP9hUVtRFum7YAx0ITixybq5hh6YkFln77NaO0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost/blog-api/public/api/articles/1",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"blog-api",
+								"public",
+								"api",
+								"articles",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Zidan",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "iyazuzzidan@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/blog-api/public/api/register",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"blog-api",
+						"public",
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "test@example.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/blog-api/public/api/login",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"blog-api",
+						"public",
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
