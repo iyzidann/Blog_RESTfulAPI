@@ -41,7 +41,11 @@ class AuthController extends Controller
             return response()->json(['error' => 'Invalid email or password'], 401);
         }
 
-        return $this->respondWithToken($token);
+        return response()->json([
+            'message' => 'Login successful',
+            'access_token' => $token,
+            'token_type' => 'bearer'
+        ]);
     }
 
     public function logout()
