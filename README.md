@@ -96,6 +96,13 @@ Authorization: Bearer {token}
 
 ---
 
+## Dokumentasi API
+
+Berikut link dokumentasi API menggunakan Postman
+**Link Dokumentasi**: [https://documenter.getpostman.com/view/39526077/2sB2qgcxQY](https://documenter.getpostman.com/view/39526077/2sB2qgcxQY)
+
+---
+
 ## 📽️ Demo Video
 
 Lihat demo penggunaan API di video berikut:
